@@ -123,7 +123,7 @@ class MenuItem(Base):
 ## ENDING configuration
 ###### insert at end of file ######
 engine = create_engine(
-    'postgresql:///restaurantmenuwithusers.db')
+    'postgresql://catalog:sillpassword@localhost/catalog')
 
 # Enters data specified into db
 Base.metadata.create_all(engine)
