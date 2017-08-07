@@ -31,7 +31,7 @@ CLIENT_ID = json.loads(
 app = Flask(__name__)
 
 # Specifies and creates db connection
-engine = create_engine('postgresql://catalog:sillpassword@localhost/catalog')
+engine = create_engine('postgresql://catalog:password@localhost/catalog')
 Base.metadata.bind = engine
 
 # Creates db connection session item
